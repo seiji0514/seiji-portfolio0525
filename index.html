@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>OGAWA SEIJI PORTFOLIO</title>
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="canonical" href="/" />
+    <meta property="og:url" content="/" />
+    <!-- Swiper CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo">
+          <img src="2024-12-02_21h39_19.png" alt="ロゴ" />
+          <h1 class="site-title">OGAWA SEIJI PORTFOLIO</h1>
+        </div>
+        <div class="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">ホーム</a></li>
+          <li><a href="about.html">自己紹介</a></li>
+          <li><a href="disability.html">障害について</a></li>
+          <li><a href="works.html">制作物</a></li>
+          <li><a href="contact.html">お問い合わせ</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero-slider swiper">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <img src="images/slider1.jpg" alt="車椅子に座るアニメキャラクター" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider2.jpg" alt="オフィスで働く車椅子のアニメキャラクター" />
+          </div>
+          <div class="swiper-slide">
+            <img src="images/slider3.jpg" alt="パソコンを使用する車椅子のアニメキャラクター" />
+          </div>
+        </div>
+        <div class="swiper-pagination"></div>
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+      </section>
+
+      <section class="section video-section">
+        <h2>自己紹介動画</h2>
+        <div class="content">
+          <div class="video-container">
+            <iframe width="560" height="315" src="https://www.youtube.com/embed/abn7cHsXaQQ" title="自己紹介動画" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen> </iframe>
+          </div>
+          <div class="video-description">
+            <h3>動画について</h3>
+            <p style="font-size: 1.2em">この動画では、私の経歴や目標、スキルなどについて紹介しています。</p>
+          </div>
+        </div>
+      </section>
+      <footer class="footer">
+        <div class="footer-content">
+          <div class="footer-info">
+            <h3>OGAWA SEIJI PORTFOLIO</h3>
+            <p>お仕事を承っております。</p>
+          </div>
+
+          <div class="footer-contact">
+            <h4>お問い合わせ</h4>
+            <p>Email: kaho052514@gmail.com</p>
+          </div>
+        </div>
+        <div class="footer-bottom">
+          <p>&copy; 2025 OGAWA SEIJI PORTFOLIO. All rights reserved.</p>
+        </div>
+      </footer>
+    </main>
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script>
+      const swiper = new Swiper(".hero-slider", {
+        loop: true,
+        autoplay: {
+          delay: 3000,
+          disableOnInteraction: false,
+        },
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+        navigation: {
+          nextEl: ".swiper-button-next",
+          prevEl: ".swiper-button-prev",
+        },
+      });
+    </script>
+  </body>
+</html>
